@@ -1,0 +1,24 @@
+.Stage {
+
+  background: paint(grid);
+  min-height: 400px;
+  min-width: 400px;
+
+}
+
+.Stage canvas {
+
+  display: block;
+  height: 100%;
+  width: 100%;
+
+}
+
+.StageHeader {
+
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1.5rem;
+
+}

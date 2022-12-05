@@ -1,0 +1,19 @@
+[package]
+name = "rust-wasm-game"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+cfg-if = "0.1.10"
+wasm-bindgen = "0.2.63"
+wee_alloc = { version = "0.4.5", optional = true }
+console_error_panic_hook = "0.1.6"
+libmath = "0.2.1"
+
+[lib]
+crate-type = ["cdylib"]
+
+[features]
+default = ["wee_alloc"]
